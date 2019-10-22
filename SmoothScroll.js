@@ -21,3 +21,12 @@ $(document).ready(function(){
       } // End if
     });
   });
+
+//   enquire.register("screen and (max-width:580px)", {
+//     match : function() {
+//         $("a[href='#Home']").attr("href","#About");
+//     },      
+//     unmatch : function() {
+//         $("a[href='#Home").attr("href","#Home");
+//     }
+// });

@@ -20,12 +20,6 @@ input,select{vertical-align:middle}
 li{list-style:none}
 
 
-/* =============================================================================
-   My CSS
-   ========================================================================== */
-
-/* ---- base ---- */
-
 html,body{ 
 	width:100vw;
 	height:100vh;
@@ -85,7 +79,6 @@ canvas{
 
 
 /* ---- particles.js container ---- */
-
 #particles-js{
   width: 100vw;
   height: 120vh;
@@ -205,7 +198,6 @@ mark.gray
 	padding:25px;
   margin: auto;
   max-width: 33vw;
-  /* insert media query for max-width */
 }
 
 #contact h3 {
@@ -223,7 +215,6 @@ mark.gray
 }
 
 fieldset {
-	/* border: medium none !important; */
 	margin: 0 0 10px;
 	min-width: 100%;
 	padding: 0;
@@ -238,16 +229,8 @@ fieldset {
 	padding:10px;
 }
 
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-	/* -webkit-transition:border-color 0.3s ease-in-out;
-	-moz-transition:border-color 0.3s ease-in-out; */
-	/* transition:border-color 0.3s ease-in-out; */
-	/* border:1px solid #AAA; */
-}
-
 #contact textarea {
   height:100px;
-  /* insert media query for height, needs to be shorter for phones */
 	max-width:100%;
   resize:none;
 }
@@ -293,4 +276,64 @@ fieldset {
 .img-fluid-profile {
   max-width: 50%;
   height: auto;
+}
+.col-sm-1
+{
+  overflow:auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar
+  {
+    display:none;
+  }
+  .videos
+  {
+    height: 100px;
+    width: 100px;
+  }
+  #smaller
+  {
+    text-align: center;
+    overflow:hidden;
+    font-size: 25px;
+  }
+
+  section.Projects
+  {
+    min-height: 75vh;
+  }
+  .img-fluid
+  {
+    max-width: 50%;
+  }
+  #contact textarea
+  {
+    height: 75px;
+  }
+  #contact
+  {
+    max-width: 55vw;
+  }
+  #pb
+  {
+    margin-bottom: 50px;
+  }
+  .container
+  {
+    overflow:hidden;
+  }
+  
+  #contact h3
+  {
+    font-size: 20px;
+  }
+  #explore
+  {
+    height: 100px;
+  }
+  #icons
+  {
+    margin-left: 0.1%;
+  }
 }
